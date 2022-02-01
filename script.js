@@ -13,5 +13,10 @@ async function displayUser(username){
 
 };
 
+function handleError(err){
+    console.log('Error!');
+    console.log(err);
+    userEl.textContent = `Something went wrong: ${err}`;
+};
 
-displayUser('codiemaureen');
+displayUser('codiemaureen').catch(handleError);
