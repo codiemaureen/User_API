@@ -9,7 +9,6 @@ async function displayUser(username){
     console.log(data);
     console.log(data.html_url);
     console.log(data.name);
-    console.log(data.location);
     userEl.textContent = `${data.name} - ${data.html_url}`;
 
 };
